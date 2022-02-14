@@ -13,9 +13,14 @@ clean:
 
 # ARKANYOTA Part
 directory-link:
-	ln -sf ~/makeschem/a.schematic ~/.minecraft/schematics/
+	ln -sf ~/makeschem/dome.schematic ~/.minecraft/schematics/
+	ln -sf ~/makeschem/map.schematic ~/.minecraft/schematics/
 
-a:
-	./generatedome.py
-	./makeschem a.scdef a.schematic
+dome:
+	./generate.py dome
+	./makeschem a.scdef dome.schematic
+
+map:
+	./generate.py map
+	./makeschem a.scdef map.schematic
 
