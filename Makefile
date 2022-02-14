@@ -10,6 +10,13 @@ clean:
 	rm -f makeschem
 	rm -f *.o
 
+domeandmapclean:
+	rm -f averif.png
+	rm -f a.png
+	rm -f a.scdef
+	rm -f dome.schematic
+	rm -f map.schematic
+
 
 # ARKANYOTA Part
 directory-link:
